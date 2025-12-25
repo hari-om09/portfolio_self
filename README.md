@@ -7,6 +7,7 @@ A modern, responsive, and production-ready portfolio website built with vanilla 
 ## ✨ Features
 
 ### Core Features
+
 - **Responsive Design** - Fully responsive across mobile, tablet, and desktop
 - **Dark/Light Mode** - Theme toggle with system preference detection and local storage persistence
 - **Smooth Animations** - Scroll-based animations and subtle hover effects
@@ -16,6 +17,7 @@ A modern, responsive, and production-ready portfolio website built with vanilla 
 - **SEO Optimized** - Meta tags, semantic HTML, and structured content
 
 ### Sections
+
 - **Home** - Hero section with typewriter effect and social links
 - **About** - Background, experience cards, and downloadable CV
 - **Skills** - Categorized skill display with icons
@@ -43,27 +45,30 @@ portfolio-website/
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Semantic structure |
-| CSS3 | Styling with Flexbox/Grid |
-| JavaScript (ES6+) | Interactivity |
-| Google Fonts | Typography (Inter, Fira Code) |
-| SVG Icons | Lightweight, scalable icons |
+| Technology        | Purpose                       |
+| ----------------- | ----------------------------- |
+| HTML5             | Semantic structure            |
+| CSS3              | Styling with Flexbox/Grid     |
+| JavaScript (ES6+) | Interactivity                 |
+| Google Fonts      | Typography (Inter, Fira Code) |
+| SVG Icons         | Lightweight, scalable icons   |
 
 ## 🎨 Design Decisions
 
 ### Color Palette
+
 - **Primary**: `#6366f1` (Indigo) - Professional yet modern
 - **Secondary**: `#10b981` (Emerald) - For accents and success states
 - **Background Light**: `#ffffff`, `#f8fafc`, `#f1f5f9`
 - **Background Dark**: `#0f172a`, `#1e293b`, `#334155`
 
 ### Typography
+
 - **Primary Font**: Inter - Clean, professional, highly readable
 - **Monospace**: Fira Code - For code elements and branding
 
 ### UX Principles
+
 1. **Progressive Enhancement** - Works without JS, enhanced with it
 2. **Performance First** - No heavy libraries, optimized assets
 3. **Mobile First** - Designed for mobile, scaled up for desktop
@@ -75,12 +80,14 @@ portfolio-website/
 ### Option 1: GitHub Pages (Recommended - Free)
 
 1. **Create a GitHub Repository**
+
    ```bash
    # Already initialized locally, now create repo on GitHub
    # Go to https://github.com/new and create a new repository
    ```
 
 2. **Push to GitHub**
+
    ```bash
    git remote add origin https://github.com/YOUR_USERNAME/portfolio-website.git
    git branch -M main
@@ -97,6 +104,7 @@ portfolio-website/
 ### Option 2: Netlify (Free with more features)
 
 1. **Via Git Integration**
+
    - Go to [Netlify](https://app.netlify.com)
    - Click "Add new site" → "Import an existing project"
    - Connect your GitHub account
@@ -111,11 +119,13 @@ portfolio-website/
 ### Option 3: Vercel
 
 1. **Install Vercel CLI**
+
    ```bash
    npm install -g vercel
    ```
 
 2. **Deploy**
+
    ```bash
    cd portfolio-website
    vercel
@@ -128,6 +138,7 @@ portfolio-website/
 ### Update Personal Information
 
 1. **index.html** - Update:
+
    - Your name in `<h1>` and meta tags
    - Social media links
    - Email address
@@ -135,6 +146,7 @@ portfolio-website/
    - Experience and education details
 
 2. **js/projects.js** - Update:
+
    - Add your actual projects
    - Update GitHub URLs
    - Add live demo links
@@ -148,12 +160,14 @@ portfolio-website/
 ### Add Your Photo
 
 Replace the placeholder in the hero section:
+
 ```html
 <!-- In index.html, replace the hero__image-placeholder div -->
-<img src="assets/your-photo.jpg" alt="Your Name" class="hero__photo">
+<img src="assets/your-photo.jpg" alt="Your Name" class="hero__photo" />
 ```
 
 Add corresponding CSS:
+
 ```css
 .hero__photo {
   width: 100%;
@@ -171,12 +185,14 @@ Add corresponding CSS:
 ## 🔧 Local Development
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/portfolio-website.git
    cd portfolio-website
    ```
 
 2. **Open with Live Server**
+
    - Using VS Code: Install "Live Server" extension and click "Go Live"
    - Using Python: `python -m http.server 8000`
    - Using Node: `npx serve`
@@ -197,6 +213,7 @@ Add corresponding CSS:
 - ✅ Lazy animations (on scroll)
 
 ### Lighthouse Scores (Target)
+
 - Performance: 90+
 - Accessibility: 95+
 - Best Practices: 95+
@@ -224,6 +241,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 👨‍💻 Author
 
 **Hariom Kr**
+
 - GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - Twitter: [@yourusername](https://twitter.com/yourusername)

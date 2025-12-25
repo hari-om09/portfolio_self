@@ -440,17 +440,37 @@
 
       this.showLoading(true);
 
-      // Simulate form submission
-      setTimeout(() => {
-        this.showLoading(false);
-        this.showSuccess();
-        form.reset();
-
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          DOM.formSuccess?.classList.add("hidden");
-        }, 5000);
-      }, 1500);
+      // Send form data via Formspree
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          this.showLoading(false);
+          if (response.ok) {
+            this.showSuccess();
+            form.reset();
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              DOM.formSuccess?.classList.add("hidden");
+            }, 5000);
+          } else {
+            throw new Error("Form submission failed");
+          }
+        })
+        .catch((error) => {
+          this.showLoading(false);
+          // Fallback: open mailto link with form data
+          const mailtoLink = `mailto:hariomkumar2262006@gmail.com?subject=${encodeURIComponent(
+            data.subject
+          )}&body=${encodeURIComponent(
+            `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+          )}`;
+          window.location.href = mailtoLink;
+        });
     },
 
     validateForm(data) {
