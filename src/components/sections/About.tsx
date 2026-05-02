@@ -20,7 +20,7 @@ export function About() {
                 <div className="about-photo-ring" />
                 <div className="about-photo-ring-inner" />
                 <img
-                  src="/about.jpeg"
+                  src={`${import.meta.env.BASE_URL}about.jpeg`}
                   alt="Hariom Kr"
                   className="about-photo"
                   loading="lazy"
