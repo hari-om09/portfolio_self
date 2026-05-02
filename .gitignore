@@ -1,6 +1,5 @@
 # Dependencies
 node_modules/
-package-lock.json
 
 # IDE/Editor
 .vscode/
@@ -34,8 +33,9 @@ yarn-error.log*
 # Build output
 dist/
 build/
-*.min.js
-*.min.css
+
+# TypeScript build cache
+*.tsbuildinfo
 
 # Temporary files
 *.tmp
